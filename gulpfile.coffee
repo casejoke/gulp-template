@@ -51,7 +51,7 @@ gulp.task 'coffee', ->
   .pipe notify 'Coffee compiled'
 ###
 gulp.task 'css', ->
-  gulp.src lessDir + '/application.less'
+  gulp.src lessDir + '/app.less'
     .pipe do less
     .on 'error', gutil.log
     .on 'error', notify.onError()
